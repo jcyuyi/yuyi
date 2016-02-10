@@ -1,0 +1,21 @@
+<header class="sidebar-header">
+<a href="/"><img id="blog" class="logo" src="{{@blog.logo}}"></a>
+<h1>{{@blog.title}}</h1>
+<h2>{{@blog.description}}</h2> 
+<hr class="separator">
+<nav class="header-nav">
+    {{! <ul class="nav"> <li> }}
+    {{navigation}}
+</nav>
+<hr class="separator">
+<div class="social-icons">
+    {{> social}}
+</div>
+</header>
+
+<footer class="sidebar-footer">
+<section class="copyright">
+    © 2016 Nayuyi • All rights reserved.
+</section>
+<section class="poweredby">Proudly published with <a class="ghost-link" href="https://ghost.org">Ghost</a> using the <a class="ghost-link" href="https://github.com/calincru/KISS">KISS</a> inspired theme. Powered by <a class="ghost-link" href="https://linode.com">Linode</a>.</section>
+</footer>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{meta_title}}</title>
+    
+    {{! Document Settings & Page Meta }}
+    {{> "meta"}}
+    
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "fonts/font.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+    
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+    
+    
+<body class="{{body_class}} body">  
+    <div class="sidebar">
+        {{> "sidebar"}}
+    </div>   
+    <div class="content">
+        {{{body}}}
+    </div>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+</body>
+</html>
