@@ -3,7 +3,7 @@ if (typeof(Worker) !== "undefined") {
     // Code highlight
     addEventListener('load', function() {
       var code = document.querySelector('code');
-      var worker = new Worker('worker-highlight.js');
+      var worker = new Worker('/assets/js/worker-highlight.js');
       worker.onmessage = function(event) { code.innerHTML = event.data; }
       worker.postMessage(code.textContent);
     })
