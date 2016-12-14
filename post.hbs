@@ -1,12 +1,16 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
+{{! Styles'n'Scripts }}
+<link rel="stylesheet" type="text/css" href="{{asset "css/xcode.css"}}" />
+<script src="{{asset "js/post.css"}}" ></script>
+
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
 {{! The main content area on the homepage }}
 <main id="main">
-    
+
     <article class="{{post_class}} single-post">
         <header class="post-header">
                 <h1 class="post-title">{{title}}</h1>
@@ -22,7 +26,7 @@
             {{content}}
         </section>
     </article>
-    
+
     <div class="post-footer">
             <section class="post-share">
                 <ul>
@@ -30,7 +34,7 @@
                 </ul>
             </section>
     </div>
-    
+
     <div class="post-related">
         <div class="prev">
             {{#prev_post}}
@@ -43,9 +47,9 @@
             {{/next_post}}
         </div>
     </div>
-    
+
     {{> "disqus"}}
-    
+
 </main>
 
 {{/post}}
