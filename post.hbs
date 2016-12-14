@@ -3,7 +3,8 @@
 
 {{! Styles'n'Scripts }}
 <link rel="stylesheet" type="text/css" href="{{asset "css/xcode.css"}}" />
-<script src="{{asset "js/post.js"}}" ></script>
+<script src="{{asset "js/highlight.pack.js"}}" ></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
