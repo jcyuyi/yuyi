@@ -1,9 +1,9 @@
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
 code {
-    background: aliceblue;
+    background-color: aliceblue;	
 }
 
 .body {
@@ -153,7 +153,7 @@ code {
 }
 
 .content a {
-    color: #333b55;
+    color: slategray;
     transition: color ease .4s;
 }
 
