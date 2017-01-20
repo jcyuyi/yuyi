@@ -183,6 +183,10 @@ code {
     margin-top: 0.5rem;
 }
 
+.post-title a {
+    color: #233445;
+}
+
 .post-content img {
     display: block;
     margin: 1.5rem auto;
